@@ -1,0 +1,32 @@
+*{font-family:Century Gothic, serif; font-size:16px;}
+#menu{ width: 1350px;}
+#menu ul li{border-radius: 10px; display: inline;	font-size: 200%;	white-space:pre;	cursor: pointer;	color: rgb(99, 187, 203);}
+.container{border-bottom:2px solid rgb(99, 187, 203);height: 700px;width: 1350px;}
+
+#instruct img{height:50px; margin: 0px 0px 0px 645px;}
+
+table td p{ color: orange; font-size:120%; line-height:1px;}
+table td{width: 150px; border: 1px solid orange; border-radius:30px; cursor:pointer;}
+
+#playGame ul li{display:inline-block;}
+#playGame div{text-align:center;}
+#feed{width: 300px;height:500px; padding:0px 0px 0px 0px; margin: auto;  overflow-y:scroll;}
+#feed::-webkit-scrollbar  { border-radius:10px;	background: white; height:10px;}
+#feed::-webkit-scrollbar-thumb{border-radius:10px; -webkit-box-shadow: inset 0 0 6px rgb(99, 187, 203);}
+#feed::-webkit-scrollbar-track{ border-radius: 10px; -webkit-box-shadow: inset 0 0 0px rgb(99, 187, 203);}
+
+#questionBox{width: 300px; height:500px;border-right:1px solid rgb(99, 187, 203); border-left:1px solid rgb(99, 187, 203); padding:0px 0px 0px 0px;}
+.progressBar{width:200px; height:30px; border:2px solid black; position:absolute; }
+#points{margin: 40px 0px 0px 20px;}
+#tries{margin:40px 0px 0px 50px;}
+#temp{margin:40px 0px 0px 370px;}
+#hp{margin: 450px 0px 0px 370px;}
+
+#game{width: 600px; height:500px; padding:0px 0px 0px 0px;}
+#questionBox p{position:absolute;font-size: 200%; text-align: center; margin:150px 0px 0px 50px; }
+#gameForm{position:absolute;  margin: 200px 0px 0px 0px; }
+
+#background{opacity: 0.3; z-index: -1; position:absolute; margin: -600px 0px 0px 10px;}
+#restart{width: 100px; text-align: left; background-color: rgb(99, 187, 203); color: white; cursor: pointer;}
+
+

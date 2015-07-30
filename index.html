@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/jquery-ui.min.css"/> 
+<link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+<script src="d:/notepad++/jquery-1.11.3.min.js"> </script>
+<script src="js/jquery-ui.min.js"> </script>
+<script type="text/javascript" src="js/objects.js"></script>
+<script type="text/javascript" src="js/mainjs.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<li id="play">   Play</li>
+			<li id="instructions">   Instructions</li>
+			<li id="help">   Help</li>
+			<li id="feedback">   Feedback</li>
+		</ul>
+	</div>
+	
+	<!--these are the instructions :D -->
+	<div id="instruct" class="container"><p style="text-align: center"><b><em>HOW TO PLAY:</em></b> 
+	When a question appears, type the answer in the answer box and click submit.
+	<br><em>Make sure your answer is rounded to the nearest whole integer. (example: 3.1415926535 and 2.7182818284 would both be 3)</em>
+	<br>Each correct answer is worth 1 point and each wrong answer -1 point.
+	<br>The more points you have, the stronger your armor and the more likely you are to survive an attack.
+	<br>When you have acquired enough points, you advance to the next level and face more difficult problems.
+	<br>Boss battles happen at the end of each level and require you to answer one challenging question.
+	<br>If you have any difficulty answering a question, check out the help section for the corresponding level.
+	<br>The game is finished when you reach the final level (7) and defeat the last boss.
+	<br>Don't forget to leave feedback after playing the game!</p>
+	<img src = "snowflake.jpg"/>
+	</div>
+	
+	<!--help files-->
+	<div id="helps" class="container">
+		<table style="text-align: center">
+			<tbody>
+			<tr>
+				<td id = "lvl1"><p>level 1</p></td>
+				<td id = "lvl2"><p>level 2</p></td>
+				<td id = "lvl3"><p>level 3</p></td>
+				<td id = "lvl4"><p>level 4</p></td>
+				<td id = "lvl5"><p>level 5</p></td>
+				<td id = "lvl6"><p>level 6</p></td>
+				<td id = "lvl7"><p>level 7</p></td>
+			</tr>
+			<tr>
+				<td><p id = "moreh" >more help</p></td>
+				<td><p id="sources">sources</p></td>
+				<td><p  id ="snow" >make it snow!</p></td>
+			</tr>
+			</tbody>
+		</table>
+		<div id="helpfiles"></div>
+	</div>
+	
+	<!--This is the feedback!-->
+	<div id="feed-back" class="container"><p>feedback</p></div>
+	
+	<!--HERE LIES THE ACTUAL GAME-->
+	<div id="playGame" class="container">
+		<ul>
+			<li><div id="feedImg"><div id="feed"></div></div></li>
+			<li><div id="questionBox">
+						<div class = "progressBar" id="tries"></div>
+						<div id = "question"></div>
+							<form id="gameForm"><p style = "font-size: 13px"> answer:
+							<input id = "answerForm" type ="text"  onfocus ="this.value=''" /> 
+							<input type= "button" id="submitAnswer" value = "submit"/></p>
+							</form>
+				</div></li>
+			<li><div id="game">
+				<div class="progressBar" id="points"></div>
+				<div class="progressBar" id="temp"></div>
+				<div class ="progressBar" id="hp"></div>
+			<div></li>
+		</ul>
+		
+		<div id="restart"><p>restart</p></div>
+	
+	</div>
+	
+	<img id="background" src="snowflake.jpg"/>
+	
+	
+	<div id = "dialog" title = "CHEAT MODE">
+			<form action = "" method = "post">
+			<p><b>CHEAT CODES:</b>
+				<br>nextLevel - advance to next level
+				<br>moreTries - get more attempts
+				<br>moreHP - get more HP </p>
+				<br>morePoints - get 10 more points</p>
+				<label>Enter Cheat</label>
+				<input id = "cheat" name = "cheat" type = "text">
+				<input id="submit" type="submit" value="Submit">
+			</form>
+	</div>
+	
+	
+	
+
+</body>
+</html>
