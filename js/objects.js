@@ -6,9 +6,7 @@ var Location = {
 	points : '#points',
 	temp : '#temp',
 	hp : '#hp'
-	
 };
-
 
 var Answer = {
 	answer : 0,
